@@ -21,8 +21,7 @@ export const systemRoleTokenCount = (s: SessionStore): number => {
 };
 
 export const chatsTokenCount = (s: SessionStore): number => {
-  const chats = currentChatsWithHistoryConfig(s);
-  return count(chats.map((m) => m.content).join(''));
+  return 0;
 };
 
 export const totalTokenCount = (s: SessionStore) => chatsTokenCount(s) + systemRoleTokenCount(s);
