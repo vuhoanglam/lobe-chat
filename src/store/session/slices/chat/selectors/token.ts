@@ -19,6 +19,7 @@ export const systemRoleTokenCount = (s: SessionStore): number => {
   return count(systemRole || '');
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const chatsTokenCount = (_s: SessionStore): number => {
   // Implementation of the function is removed for now
   return 0;
